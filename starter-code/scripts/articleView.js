@@ -9,7 +9,11 @@ articleView.initNewArticlePage = function() {
 
 };
 
+articleView.create = function() {
+  $('#article-preview').empty().fadeIn();
 
+  var formArticle = new Article({
+    title: $('#article-title').val(),
 
 articleView.render = function() {
   articles.forEach(function(a) {
