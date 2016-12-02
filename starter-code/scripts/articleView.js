@@ -1,6 +1,13 @@
 // Configure a view object, to hold all our functions for dynamic updates and article-related event handlers.
 var articleView = {};
 
+articleView.initNewArticlePage = function() {
+  $('#article-json').on('focus', function() {
+    $(this).select();
+  
+
+
+
 articleView.render = function() {
   articles.forEach(function(a) {
     $('#articles').append(a.toHtml('#article-template'));
