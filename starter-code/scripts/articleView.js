@@ -4,7 +4,10 @@ var articleView = {};
 articleView.initNewArticlePage = function() {
   $('#article-json').on('focus', function() {
     $(this).select();
-  
+  });
+  $('#new-form').on('change', articleView.create);
+
+};
 
 
 
