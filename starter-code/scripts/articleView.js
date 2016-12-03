@@ -14,6 +14,9 @@ articleView.create = function() {
 
   var formArticle = new Article({
     title: $('#article-title').val(),
+    body: $('#article-body').val(),
+  author: $('#article-author').val(),
+  category: $('#article-category').val(),
 
 articleView.render = function() {
   articles.forEach(function(a) {
