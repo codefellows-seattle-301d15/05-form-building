@@ -1,6 +1,35 @@
 // Configure a view object, to hold all our functions for dynamic updates and article-related event handlers.
 var articleView = {};
 
+articleView.initNewArticlePage = function() {
+  $('#article-json').on('focus', function() {
+    $(this).select();
+  });
+  $('#new-form').on('change', articleView.create);
+};
+
+articleView.create = function(){
+  $('#article-preview').empty();
+
+  var formArticle = new Article({
+    title: $('#article-title').val(),
+    body: $('#article-body').val(),
+    author: $('#article-author').val(),
+    authorUrl: $('#article-author-url').val(),
+    category: $('#article-category').val(),
+    publishedOn: $('#article-published:checked').length ? new Date() : null
+  });
+
+  $('#article-preview').append(formArticle.toHtml('#article-template'));
+
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+
+  $('#article-json').val(JSON.stringify(formArticle) + ',');
+};
+
+
 articleView.render = function() {
   articles.forEach(function(a) {
     $('#articles').append(a.toHtml('#article-template'));
@@ -65,6 +94,7 @@ articleView.setTeasers = function() {
   });
 };
 
+articleView.initNewArticlePage();
 articleView.render();
 articleView.handleCategoryFilter();
 articleView.handleAuthorFilter();
