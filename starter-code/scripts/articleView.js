@@ -94,6 +94,7 @@ articleView.setTeasers = function() {
   });
 };
 
+articleView.initNewArticlePage();
 articleView.render();
 articleView.handleCategoryFilter();
 articleView.handleAuthorFilter();
