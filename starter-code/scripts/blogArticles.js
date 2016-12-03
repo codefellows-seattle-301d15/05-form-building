@@ -1,4 +1,6 @@
 var ourLocalData = [
+// paste the json string here btwn {}  and you should see the example text in the home page again
+
   {
     title:       'Bacon Ipsum',
     category:    'food',
