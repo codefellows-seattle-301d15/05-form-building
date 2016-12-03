@@ -1,4 +1,5 @@
 var ourLocalData = [
+  {"title":"Yay it's Friday","body":"<p>Check out my new function</p>\n<pre><code>\nfunction sayHi() {\nreturn &quot;hi!&quot;\n\n}\n</code></pre>","author":"Doug Funny","authorUrl":"www.code.org","category":"fun","publishedOn":"2016-12-03T00:41:23.861Z","daysAgo":0,"publishStatus":"(published today)"},
   {
     title:       'Bacon Ipsum',
     category:    'food',
