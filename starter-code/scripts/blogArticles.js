@@ -1,4 +1,4 @@
-var ourLocalData = [
+var ourLocalData = [ {"title":"Suh Dude","body":"<p>Yo here&#39;s my shit:</p>\n<pre><code>//Look at that comment///\n</code></pre>","author":"John Doe","authorUrl":"www.google.com","category":"X-Mas","publishedOn":"2016-12-03T00:51:22.120Z","daysAgo":0,"publishStatus":"(published today)"},
   {
     title:       'Bacon Ipsum',
     category:    'food',
