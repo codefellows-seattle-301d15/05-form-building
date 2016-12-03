@@ -1,4 +1,5 @@
 var ourLocalData = [
+  {"title":"Friday","body":"<pre><code>function sayHi() {\nreturn &#39;Hi&#39;;\n}\n</code></pre>","author":"","category":"","publishedOn":null,"daysAgo":17138,"publishStatus":"(draft)"},
   {
     title:       'Bacon Ipsum',
     category:    'food',
