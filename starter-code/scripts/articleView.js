@@ -15,7 +15,7 @@ articleView.create = function() {
 
   var formArticle = new Article({
     title: $('#article-title').val(),
-    body: $('article-body').val(),
+    body: $('#article-body').val(),
     author: $('#article-author').val(),
     authorUrl: $('#article-author-url').val(),
     category: $('#article-category').val(),
@@ -27,7 +27,7 @@ articleView.create = function() {
     hljs.highlightBlock(block);
   });
 
-  $('#article-json').val(JSON.stringfy(formArticle) + ',');
+  $('#article-json').val(JSON.stringify(formArticle) + ',');
 };
 
 

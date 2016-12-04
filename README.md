@@ -40,4 +40,13 @@ The ? means...
 if true, goes to new Date
 if false, goes to null
 
-hljs is the library we added to the html file to highlight 
+hljs is the library we added to the html file to highlight
+
+
+<!-- ```
+
+function sayHi() {
+console.log('Woohoo!');
+}
+
+``` -->

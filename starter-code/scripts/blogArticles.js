@@ -1,5 +1,7 @@
 var ourLocalData = [
-// paste the json string here btwn {}  and you should see the example text in the home page again
+// paste the json string here and you should see the example text in the home page within a black box
+// {"title":"testfive","author":"","authorUrl":"","category":"","publishedOn":"2016-12-03T00:55:46.889Z","daysAgo":0,"publishStatus":"(published today)"},
+{"title":"test","body":"```\n\nfunction sayHi() {\nconsole.log('Woohoo!');\n}\n\n```","author":"","authorUrl":"","category":"","publishedOn":"2016-12-03T01:06:13.148Z","daysAgo":0,"publishStatus":"(published today)"},
 
   {
     title:       'Bacon Ipsum',
