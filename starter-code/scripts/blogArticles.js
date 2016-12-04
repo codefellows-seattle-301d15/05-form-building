@@ -1,4 +1,6 @@
 var ourLocalData = [
+{"title":"testering","body":"<pre><code>\nfunction sayHi() {\nconsole.log(&#39;Woohoo!&#39;);\n}\n</code></pre>","author":"me","authorUrl":"this.com","category":"","publishedOn":"2016-12-04T03:30:04.515Z","daysAgo":0,"publishStatus":"(published today)"},
+
   {
     title:       'Bacon Ipsum',
     category:    'food',

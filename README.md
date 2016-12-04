@@ -12,3 +12,41 @@ Follow along with the in-class workshop. When you are done, you should be able t
 
 - [Python Lecture with Cris Ewing](https://www.youtube.com/watch?v=wgnG-F6PBHI&index=17&list=PLVngfM2hsbi8gIVLWmnvSc975LAPYInrA)
 - [Forms Lecture (Coming Soon)]()
+
+
+Ashley's notes:
+() are the invocation operator
+in a function, it invokes the function
+Order of the call stack form bottom to top (see article.js):
+.sort --> anonymous function --> new Date function
+(the anonymous func?? is removed from the stack)
+
+pushed to stack when called
+removed from stack when (completed) return
+array.push gives length of array
+array.pop removes the last item in the array which reduces the length of the array
+
+you can put "debugger;" into a function and the application will pause at that spot so you can review it.
+
+$('#new-form').on('change' , articleView.create);
+...if we had done this articleView.create()
+immediately when the interpreter reads it (not when the event -inthis case change, actually fires)
+
+
+opts is an Object from the info the user has entered
+
+publishedOn: $('#article-published:checked').length ? new Date : null
+The ? means...
+if true, goes to new Date
+if false, goes to null
+
+hljs is the library we added to the html file to highlight
+
+
+<!-- ```
+
+function sayHi() {
+console.log('Woohoo!');
+}
+
+``` -->
